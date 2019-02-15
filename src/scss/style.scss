@@ -22,3 +22,93 @@ header {
         }
     }
 }
+
+section {
+    width: 100%;
+    @include flex;
+    overflow-y: auto;
+    background: pink;
+    .two {
+        height: pxTorem(50px);
+        background: #fff;
+        dl {
+            width: 100%;
+            height: pxTorem(50px);
+            @include box_flex;
+            // @include justify;
+            // @include align;
+            dt {
+                width: 50px;
+                height: 50px;
+                background: blue;
+                margin: pxTorem(15px) pxTorem(15px);
+            }
+            dd {
+                margin-left: pxTorem(5px);
+                line-height: pxTorem(25px);
+                span {
+                    color: orange;
+                }
+                div {
+                    span {
+                        border: 1px solid green;
+                        color: green;
+                        margin-right: 10px;
+                    }
+                    color:#ccc;
+                    margin-left:5px;
+                }
+            }
+        }
+    }
+    .three {
+        padding: pxTorem(5px);
+        width: 95%;
+        height: pxTorem(100px);
+        >img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .uls {
+        width: 100%;
+        height: pxTorem(50px);
+        background: #fff;
+        @include box_flex;
+        justify-content: space-around;
+        border-bottom: 2px solid #ccc;
+        li {
+            line-height: pxTorem(50px);
+        }
+        li.active {
+            color: orange;
+            border-bottom: 2px solid orange;
+        }
+    }
+    .four {
+        width: 100%;
+        background: #fff;
+        // @include box_flex;
+        dl {
+            height: pxTorem(100px);
+            @include box_flex;
+            border-bottom: 1px solid #ccc;
+            dt {
+                height: pxTorem(50px);
+                width: pxTorem(50px);
+                background: blue;
+                margin: pxTorem(5px) pxTorem(5px);
+            }
+            dd {
+                line-height: pxTorem(25px);
+                margin: pxTorem(5px) pxTorem(5px);
+                div:nth-child(1) {
+                    color: #ccc;
+                }
+                div:nth-child(2) {
+                    font-size: pxTorem(14px);
+                }
+            }
+        }
+    }
+}
