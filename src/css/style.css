@@ -1,0 +1,363 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+header {
+  width: 100%;
+  height: 0.93333rem;
+}
+
+header .one {
+  height: 0.93333rem;
+  background: #000;
+}
+
+header .one h3 {
+  color: #fff;
+  line-height: 0.93333rem;
+  text-align: center;
+  font-size: 0.37333rem;
+}
+
+section {
+  width: 100%;
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+  overflow-y: auto;
+  background: pink;
+}
+
+section .two {
+  height: 1.33333rem;
+  background: #fff;
+}
+
+section .two dl {
+  width: 100%;
+  height: 1.33333rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+section .two dl dt {
+  width: 50px;
+  height: 50px;
+  background: blue;
+  margin: 0.4rem 0.4rem;
+}
+
+section .two dl dd {
+  margin-left: 0.13333rem;
+  line-height: 0.66667rem;
+}
+
+section .two dl dd span {
+  color: orange;
+}
+
+section .two dl dd div {
+  color: #ccc;
+  margin-left: 5px;
+}
+
+section .two dl dd div span {
+  border: 1px solid green;
+  color: green;
+  margin-right: 10px;
+}
+
+section .three {
+  width: 100%;
+  height: 5.33333rem;
+  background: red;
+}
+
+section .uls {
+  width: 100%;
+  height: 1.33333rem;
+  background: #fff;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  justify-content: space-around;
+  border-bottom: 2px solid #ccc;
+}
+
+section .uls li {
+  line-height: 1.33333rem;
+}
+
+section .uls li.active {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+section .four {
+  width: 100%;
+  background: #fff;
+}
+
+section .four dl {
+  height: 2.66667rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  border-bottom: 1px solid #ccc;
+}
+
+section .four dl dt {
+  height: 1.33333rem;
+  width: 1.33333rem;
+  background: blue;
+  margin: 0.13333rem 0.13333rem;
+}
+
+section .four dl dd {
+  line-height: 0.66667rem;
+  margin: 0.13333rem 0.13333rem;
+}
+
+section .four dl dd div:nth-child(1) {
+  color: #ccc;
+}
+
+section .four dl dd div:nth-child(2) {
+  font-size: 0.37333rem;
+}
+
+footer {
+  width: 100%;
+  height: 1.33333rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  background: #000;
+}
+
+footer dl {
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+  height: 1.33333rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+footer dl dt {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+
+footer dl dt .iconfont {
+  font-size: 0.53333rem;
+}
+
+footer dl dd {
+  color: #fff;
+}
