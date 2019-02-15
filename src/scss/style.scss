@@ -7,3 +7,18 @@
     @include direction(column);
     @include box_flex;
 }
+
+header {
+    width: 100%;
+    height: pxTorem(35px);
+    .one {
+        height: pxTorem(35px);
+        background: #000;
+        h3 {
+            color: #fff;
+            line-height: pxTorem(35px);
+            text-align: center;
+            font-size: pxTorem(14px);
+        }
+    }
+}
